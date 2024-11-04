@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <title>Vår andra hemsida!</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Hej och välkommen!</h1>
+        <!-- Länkar -->
+        <!-- Kan länka till andra sidor på internet, ELLER till andra html-dokument
+         på den egna sidan.
+         
+         Använder elemnetet <a>, står för anchor
+            attributet href anger länkadressen
+            attributet target kan användas för att öppna i ny flik, mha _blank-->
+
+        <a href="https://www.lingscars.com/" target="_blank">Vår länktext! Länk till den bästa sidan som finns!</a>
+
+        <!-- Absolut sökväg jämfört med relativ sökväg
+         En absolut sökväg hänvisar till en plats på internet eller en specifik plats på hårddisken
+         En relativ sökväg utgår ifrån den aktuella html-filen (index.html) och 
+         kan hänvisa till sidor/bilder utifrån den -->
+
+         <!-- Länkar är "inline element", dvs de börjar inte på ny rad av sig själva
+          Däremot kan man lägga dem inuti ett "blocknivå elemenet" för att få ny rad
+          Blocknivå element gör alltid ny rad -->
+
+        <p><a href="sidor/intressen.html">Länk till sidan intressen</a></p>
+
+        <!-- Man kan också göra länkar direkt till mail, via att skriva in "mailto:" i referensen -->
+         <a href="mailto:emil.frisk@ulricehamn.se">Maila mig!</a>
+
+
+
+
+
+        <!-- Listor 
+         Ett sätt att presentera information, ex. länkar eller text eller nåt
+         För att göra en lista i html behövs alltid två typer av element
+         Dels för att ange vilken sorts lista det är, men också element för respektive punkt på listan
+         Finns både numrerad lista (ordered list) och icke numrerad (unordered list)
+         För punkterna på listan används li (list item)-->
+
+         <!-- Det går att nästla listor, dvs ha en lista inne i ett list item -->
+
+         <ul>
+            <li>Hej</li>
+            <li>på</li>
+            <li>dig!</li>
+         </ul>
+
+         <ol>
+            <li>Hej</li>
+            <li>på</li>
+            <li>dig!</li>
+         </ol>
+
+
+         <!-- Tabeller -->
+          <table>
+            <!-- Första raden, tr = table row -->
+            <tr>
+                <!-- Tabellrubriker, th = table heading -->
+                <th>Rubrik 1</th>
+                <th>Rubrik 2</th>
+                <th>Rubrik 3</th>
+            </tr>
+            <!-- Andra raden -->
+            <tr>
+                <!-- Tabelldata, td = table data -->
+                <td>Info</td>
+                <td>Info</td>
+                <td>Info</td>
+            </tr>
+
+            <tr>
+                <!-- Tabelldata, td = table data -->
+                <td>Info</td>
+                <td>Info</td>
+                <td>Info</td>
+            </tr>
+
+          </table>
+
+          <!-- Blocknivåelement jfrt Inlineelement 
+          Egentligen i html5 finns nu istället 7 kategorier med element
+          Men tanken på block och inline funkar bra i praktiken 
+
+          block
+          - påbörjar alltid ny rad
+          - tar alltid sidans fulla bredd från början
+          ex. <p>, <div>, <h1-6>
+
+          inline
+          - inte ny rad
+          - tar så stor plats på bredden som behövs
+          ex. <b> <a> <span>
+          
+          Inline element kan INTE innehålla block element
+
+
+          -->
+
+          <!-- Span 
+           kan används för att stylea/markera viss del av text-->
+           <p>Min långa <span style="color: rgb(21, 255, 0); font-family: 'Courier New', Courier, monospace;">mening</span> med text i.</p>
+
+
+        <!-- Div -->
+         <div style="background-color: bisque; width: 50%; margin: auto; float: right;">
+            <p style="background-color: aquamarine;">Hejsan!</p>
+            <hr>
+            <p>Hej igen!</p>
+            
+         </div>
+
+
+         
+
+
+
+
+
+
+
+
+
+
+          <div style="background-color: blueviolet; padding: 10px;">
+            <p>hej jag är text</p>
+            <hr style="border: ridge rgb(255, 103, 103);">
+          </div>
+        
+    </body>
+</html>
